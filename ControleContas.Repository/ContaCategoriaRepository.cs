@@ -10,34 +10,29 @@ namespace ControleContas.Repository
 {
     public class ContaCategoriaRepository : IContaCategoriaRepository
     {
-        public void Alterar(ContaCategoria entidade)
+        public void Alterar(ContaCategoria contaCategoria)
         {
-            throw new NotImplementedException();
+            Db.Execute("ContaCategoriaAlterar", contaCategoria);
         }
 
         public void Excluir(string id)
         {
-            throw new NotImplementedException();
+            Db.Execute("ContaCategoriaExcluir", new { Id =id });
         }
 
-        public void Incluir(ContaCategoria entidade)
+        public void Incluir(ContaCategoria contaCategoria)
         {
-            throw new NotImplementedException();
+            Db.Execute("ContaCategoriaIncluir", contaCategoria);
         }
 
         public ContaCategoria ObterPorId(string id)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<ContaCategoria> ObterTodos()
-        {
-            throw new NotImplementedException();
+            return Db.QueryEntidade<ContaCategoria>("ContaCategoriaObterPorId", new { Id = id });
         }
 
         public IEnumerable<ContaCategoria> ObterTodos(string usuarioId)
         {
-            throw new NotImplementedException();
+            return Db.QueryColecao<ContaCategoria>("ContaCategoriaObterTodos", null);
         }
 
         public IEnumerable<string> Validar()

@@ -1,9 +1,10 @@
 ﻿using ControleContas.Domain.Models;
+using ControleContas.Domain.Interfaces;
 using ControleContas.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace ControleCoontas.Tests
+namespace ControleContas.Tests
 {
     [TestClass]
     public class UsuarioTest

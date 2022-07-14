@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleContas.Service", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleContas.UI.Web", "ControleContas.UI.Web\ControleContas.UI.Web.csproj", "{74D1C00C-27DA-4253-A779-6C6875C642FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleCoontas.Tests", "ControleCoontas.Tests\ControleCoontas.Tests.csproj", "{0E7F19D0-D80E-4E74-9D56-BC0B74FE59B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleContas.Tests", "ControleCoontas.Tests\ControleContas.Tests.csproj", "{0E7F19D0-D80E-4E74-9D56-BC0B74FE59B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
